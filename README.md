@@ -21,9 +21,9 @@ Front-End:
     2. CSS
     3. JavaScript
 Back-End:
-    1. Python(with Flask)
-    2. MySQL
-    3. API
+    1. Python(with Flask)\
+    2. MySQL\
+    3. API\
 
 ## **Screenshots and demo**
 In the repository, there is a demo file that cotains screeshots and live demo. The link is below, you can check it out
