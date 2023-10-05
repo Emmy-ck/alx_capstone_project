@@ -28,6 +28,7 @@ Back-End:\
 ## **Screenshots and demo**
 In the repository, there is a demo file that cotains screeshots and live demo. The link is below, you can check it out.\
 [ProjectPrototype.html](./ProjectPrototype.html)
+<img src="./Capstone Project Flowchart.drawio.png">
 
 ## **Roadmap and future enhancements**
 I would like to ensure that this application is fully accessible to users with disabilities, complying with accessibility standards and guidelines.
