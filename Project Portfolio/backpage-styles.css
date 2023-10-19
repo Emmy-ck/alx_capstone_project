@@ -1,0 +1,253 @@
+body {
+    background-image: url(./assets/thread-networks-icon.jpg);
+    font-family: Sofia, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.62rem 0.62rem;
+}
+
+.logo-image {
+    display: flex;
+    align-items: center;
+    width: 15.65px;
+    
+}
+
+.logo-image img {
+    max-width: 80px;
+    margin-right: 10px;
+    width: 100%;
+    height: 100%;
+}
+.logo-image p {
+    font-size: xxx-large;
+    font-weight: bold;
+    font-family: monospace;
+    font-style: italic;
+    color: black
+}
+
+/* Style top menu and navigation links*/
+
+.top-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.top-menu li {
+    margin-right: 150px;
+    font-size: x-large;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: rgba(255, 200, 0, 0.8);
+}
+.top-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+/* Style the search button*/
+.top-search-bar button {
+    background-color: black;
+    color: black;
+}
+
+.back-page {
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: center;
+}
+.back-page h2 {
+    color: black;
+    font-size: 50px;
+    text-decoration: underline;
+}
+.contact-info {
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    /* background-color: rgba(0, 255, 255, 0.3); */
+}
+.contact-info #button {
+    background-color: orange;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 20px;
+
+    &:hover {
+        background-color: greenyellow;
+    }
+}
+.back-page form {
+    /* background-color: orange; */
+    font-weight: bold;
+    font-size: 25px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255, 0.8);
+}
+.back-page #firstname, #lastname, #email, #subject, #message {
+    background-color: rgba(255, 165, 0, 0.5);
+}
+.backpage-info {
+    /* background-color: brown; */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.backpage-heading {
+    /* background-color: purple; */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.email-page {
+    padding: 10px;
+    background-color: rgba(0, 255, 255, 0.3);
+    border-radius: 10px;
+}
+.email-page p {
+    font-size: 40px;
+    margin: 10px 0;
+    color: black;
+    font-weight: bold;
+}
+.email-page a {
+    color: black;
+}
+.email-page a:hover {
+    font-size: 20px;
+}
+.social-buttons {
+    /* background-color: darkgoldenrod; */
+    padding: 10px;
+    border-radius: 5px;
+}
+.end-text {
+    /* background-color: green; */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0.6);
+}
+.end-text p {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+footer {
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 767px) {
+    .logo-image img {
+        max-width: 30px;
+    }
+    .top-menu ul {
+        flex-direction: column;
+    }
+    .top-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .top-search-bar button {
+        background-color: lightcoral; /* Change search button color for small screens */
+    }
+    .back-page {
+        flex-direction: column; /* Stack content in back-page in a column */
+    }
+    .contact-info {
+        max-width: 90%; /* Adjust max width for contact-info */
+    }
+    .backpage-heading {
+        font-size: 24px; /* Increase font size for heading */
+    }
+    .email-page a:hover {
+        color: red; /* Adjust font size for email links */
+    }
+    .social-buttons {
+        flex-direction: row; /* Display social buttons in a row */
+        justify-content: space-around; /* Adjust spacing for social buttons */
+        margin: 20px 0; /* Add margin between social buttons and text */
+    }
+}
+
+/* For screens smaller than 1024px (e.g., tablets) */
+@media (max-width: 1023px) {
+    .top-menu li {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
+/* Define your global styles for larger screens here */
+
+/* Media Query for screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 767px) {
+    body {
+        font-family: "Sofia", sans-serif;
+        flex-direction: column;
+    }
+
+    /* Adjust the logo image size for small screens */
+    .logo-image img {
+        max-width: 30px;
+    }
+
+    /* Adjust the top menu for small screens */
+    .top-menu ul {
+        flex-direction: column;
+    }
+    .top-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Change search button color for small screens */
+    .top-search-bar button {
+        background-color: lightcoral;
+    }
+
+    /* Stack content in back-page in a column */
+    .back-page {
+        flex-direction: column;
+    }
+
+    /* Adjust max width for contact-info */
+    .contact-info {
+        max-width: 90%;
+    }
+
+    /* Increase font size for the heading in backpage-heading */
+    .backpage-heading {
+        font-size: 24px;
+    }
+
+    /* Adjust font size for email links */
+    .email-page a:hover {
+        color: red;
+    }
+
+    /* Display social buttons in a row */
+    .social-buttons {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+
+}

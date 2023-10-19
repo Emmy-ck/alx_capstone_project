@@ -1,0 +1,193 @@
+
+/* Style for front page items */
+.front-items {
+    display: flex;
+    
+}
+.front-text {
+    background-color: rgba(255, 230, 0, 0.724);
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    
+}
+.front-items h1 {
+    font-size: 80px;
+    font-family: sofia, sans-serif;
+}
+.front-text p {
+    font-size: 50px;
+    font-family: sofia, sans-serif;
+}
+.subscribe-form {
+    background-color:rgba(0, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    flex: none;
+    height: 200%;
+    margin-left: 200px;
+}
+.subscribe-form p {
+    font-size: 30px;
+    color: black;
+    font-weight:bold;
+}
+.subscribe-form button {
+    background-color: lightgreen;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.subscribe-form button:hover {
+    background-color: greenyellow;
+}
+/* Add styles for the login form container */
+.login-form-container {
+    display: none; /* Initially hide the login form */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5cm; /* Adjust as needed */
+    height: 8cm;
+    background-color: rgba; /* Semi transparent background*/
+    padding: 20px;
+    box-shadow: -3px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Style the login form inside the container */
+.login-form {
+    text-align: center;
+    border-radius: 5px;
+    margin: 5% auto; /* Center the form vertically and horizontally */
+    padding: 20px;
+    max-width: 400px; /* Adjust as needed */
+    box-shadow: 0 0 10px;
+}
+.login-form h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0 0 20px;
+    color: #333;
+}
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.login-form a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+ /* Styles for footer */
+footer {
+    background-color: purple;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-element {
+    background-color: yellow;
+    align-items: center;
+}
+
+.footer-element img {
+    background-color: red;
+    margin-right: 10px;
+}
+.footer-element p {
+    font-size: 16px;
+}
+/* Media query for small screens (e.g., mobile phones) */
+/* Media Query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: contain; /* Adjust background size */
+    }
+
+    header {
+        padding: 5px 5px; /* Adjust padding */
+    }
+
+    .logo-image {
+        width: 150px; /* Adjust logo image width */
+    }
+
+    .logo-image img {
+        max-width: 60px; /* Adjust image size */
+    }
+
+    .logo-image p {
+        font-size: x-large; /* Adjust font size */
+    }
+    .subscribe-form {
+        margin-left: 0;
+    }
+
+    .front-text {
+        width: 100%; /* Take up full width */
+    }
+
+    .front-items h1 {
+        font-size: 60px; /* Adjust font size */
+    }
+
+    .front-text p {
+        font-size: 40px; /* Adjust font size */
+    }
+
+    .subscribe-form {
+        margin-left: 0; /* Remove margin */
+    }
+
+    .subscribe-form p {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .subscribe-form button {
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .login-form-container {
+        width: 100%; /* Take up full width */
+    }
+
+    .login-form {
+        max-width: 100%; /* Take up full width */
+    }
+}
