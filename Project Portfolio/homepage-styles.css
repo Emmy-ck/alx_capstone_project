@@ -1,4 +1,63 @@
+body {
+    background-image: url(./assets/thread-networks-icon.jpg);
+    font-family: Sofia, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.logo-image {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    
+}
+
+.logo-image img {
+    max-width: 80px;
+    margin-right: 10px;
+    width: 100%;
+    height: 100%;
+}
+.logo-image p {
+    font-size: xxx-large;
+    font-weight: bold;
+    font-family: monospace;
+    font-style: italic;
+    color: black
+}
+
+/* Style top menu and navigation links*/
+
+.top-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.top-menu li {
+    margin-right: 150px;
+    font-size: x-large;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: rgba(255, 200, 0, 0.8);
+}
+.top-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+/* Style the search button*/
+.top-search-bar button {
+    background-color: black;
+    color: black;
+}
 /* Style for front page items */
 .front-items {
     display: flex;
