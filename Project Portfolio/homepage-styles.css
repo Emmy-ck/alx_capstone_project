@@ -41,7 +41,7 @@ header {
     display: flex;
 }
 .top-menu li {
-    margin-right: 150px;
+    margin-right: 2rem;
     font-size: x-large;
     text-decoration: underline;
     font-weight: bold;
@@ -50,7 +50,7 @@ header {
 .top-menu a {
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: 1.25rem;
 }
 
 /* Style the search button*/
@@ -61,13 +61,14 @@ header {
 /* Style for front page items */
 .front-items {
     display: flex;
-    
+    padding: 0.5rem;
 }
 .front-text {
     background-color: rgba(255, 230, 0, 0.724);
-    padding: 20px;
+    padding: 1rem;
     text-align: center;
-    width: 50%;
+    width: 0.5rem;
+    border-radius: 1.5rem;
     
 }
 .front-items h1 {
@@ -85,10 +86,10 @@ header {
     padding: 20px;
     flex: none;
     height: 200%;
-    margin-left: 200px;
+    margin-left: 12.5rem;
 }
 .subscribe-form p {
-    font-size: 30px;
+    font-size: 1.8rem;
     color: black;
     font-weight:bold;
 }
@@ -97,7 +98,7 @@ header {
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
 }
 .subscribe-form button:hover {
@@ -174,28 +175,27 @@ header {
 }
  /* Styles for footer */
 footer {
-    background-color: purple;
     padding: 10px;
     text-align: center;
 }
 
 .footer-element {
-    background-color: yellow;
+    background-color: rgba(128, 0, 128, 0.5);
     align-items: center;
+    border-radius: 1rem;
 }
 
-.footer-element img {
-    background-color: red;
-    margin-right: 10px;
-}
 .footer-element p {
-    font-size: 16px;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: bold;
 }
-/* Media query for small screens (e.g., mobile phones) */
+/* Media query for small screens (e.g., mobile phones)
 /* Media Query for screens smaller than 768px */
-@media screen and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
     body {
-        background-size: contain; /* Adjust background size */
+        background-position: center;
+        background-size: cover; /* Adjust background size */
     }
 
     header {
@@ -203,11 +203,11 @@ footer {
     }
 
     .logo-image {
-        width: 150px; /* Adjust logo image width */
+        width: 9rem; /* Adjust logo image width */
     }
 
     .logo-image img {
-        max-width: 60px; /* Adjust image size */
+        max-width: 3.5rem; /* Adjust image size */
     }
 
     .logo-image p {
@@ -222,24 +222,94 @@ footer {
     }
 
     .front-items h1 {
-        font-size: 60px; /* Adjust font size */
+        font-size: 3rem; /* Adjust font size */
     }
 
     .front-text p {
-        font-size: 40px; /* Adjust font size */
+        font-size: 1.5rem; /* Adjust font size */
     }
 
     .subscribe-form {
-        margin-left: 0; /* Remove margin */
+        margin-left: 3rem; /* Remove margin */
     }
 
     .subscribe-form p {
-        font-size: 24px; /* Adjust font size */
+        font-size: 1.5rem; /* Adjust font size */
     }
 
     .subscribe-form button {
         padding: 8px 16px; /* Adjust padding */
         font-size: 14px; /* Adjust font size */
+
+        &:hover {
+            background-color: greenyellow;
+            font-size: 1rem;
+        }
+    }
+
+    .login-form-container {
+        width: 100%; /* Take up full width */
+    }
+
+    .login-form {
+        max-width: 100%; /* Take up full width */
+    }
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-position: center;
+        background-size: cover; /* Adjust background size */
+    }
+
+    header {
+        padding: 5px 5px; /* Adjust padding */
+    }
+
+    .logo-image {
+        width: 9rem; /* Adjust logo image width */
+    }
+
+    .logo-image img {
+        max-width: 3.5rem; /* Adjust image size */
+    }
+
+    .logo-image p {
+        font-size: x-large; /* Adjust font size */
+    }
+    .subscribe-form {
+        margin-left: 0;
+    }
+
+    .front-text {
+        width: 100%; /* Take up full width */
+    }
+
+    .front-items h1 {
+        font-size: 3rem; /* Adjust font size */
+    }
+
+    .front-text p {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .subscribe-form {
+        margin-left: 3rem; /* Remove margin */
+    }
+
+    .subscribe-form p {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .subscribe-form button {
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+
+        &:hover {
+            background-color: greenyellow;
+            font-size: 1rem;
+        }
     }
 
     .login-form-container {
