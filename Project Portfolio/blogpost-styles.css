@@ -2,6 +2,7 @@ body {
     background-image: url(./assets/thread-networks-icon.jpg);
     font-family: Sofia, sans-serif;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -91,7 +92,6 @@ header {
     display: flex;
     flex-direction: row;
     padding: 20px;
-    max-width: 50%;
 }
 .blog-text .front-end, .back-end {
     border-radius: 20px;
@@ -196,40 +196,607 @@ footer p {
     font-size: 20px;
 }
 /* Media Queries for Responsive Design */
-
-/* For screens smaller than 768px (e.g., smartphones) */
-@media (max-width: 767px) {
+/* Media queries for screens smaller than 320px*/
+@media  (max-width: 320px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+    header {
+        padding: 0.2rem 0.2rem; /* Adjust padding */
+    }
+    .logo-image {
+        width: 5rem;
+        height: auto;
+    }
     .logo-image img {
-        max-width: 30px;
+        width: 1.5rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 0.5rem;
     }
     .top-menu ul {
-        flex-direction: column;
+        margin-right: 0.3rem;
+        padding: 1rem 0.3rem;
     }
     .top-menu li {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin: 1rem 0.3rem;
+        font-size: x-small;
+    }
+    .top-menu a {
+        font-size: x-small;    
+    }
+    .top-search-bar {
+        /* width: 0.03rem;
+        height: auto;
+        margin-right: 50px; */
+        display: none;
+    }
+    .blog-front {
+        padding: 0;
+        margin-right: 60rem;
+    }
+    .blog-front h2 {
+        font-size: 1rem;
+        margin-left: 18rem;
+    }
+    .blog-text h2 {
+        margin-left: 1rem;
     }
     .blog-text {
-        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blog-text .front-end, .back-end {
+        font-size: 0.5rem;
+        width: 19rem;
+    }
+    .back-end {
+        margin-top: 20px;
+        width: 16.5rem;
+        height: auto;
+    }
+    .blog-text ol {
+        text-align: left;
+    }
+    .blog-text h3 {
+        margin-right: 6.5rem;
     }
     .create-post button {
-        font-size: 14px;
+        display: none;
+        /* width: 4rem;
+        height: 1rem;
+        font-size: 10px;
+        align-items: center; */
     }
-    .blog-image {
-        max-width: 100%;
+    .posts-page {
+        margin-left: 18.75rem;
     }
-    .firstpost-text, .secondpost-text, .thirdpost-text {
-        max-width: 100%;
+    .posts-page h2 {
+        font-size: 1.25rem;
+        text-align: left;
+        width: 16rem;
+        margin-left: 100px;
     }
-    .firstpost-image, .secondpost-image, .thirdpost-image {
-        max-width: 100%;
+    .posts-page .first-post, .second-post, .third-post {
+        width: 250px;
+    }
+    .posts-page p {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .posts-page h3 {
+        font-size: 10px;
+    }
+    .posts-page img {
+        height: 100px;
+    }
+    footer p {
+        background-color: red;
+        font-size: 10px;
+        width: 300px;
+        margin-left: 300px;
     }
 }
 
-/* For screens smaller than 1024px (e.g., tablets) */
-@media (max-width: 1023px) {
+
+/* Small screens like Mobile Devices */
+@media (min-width:321px) and (max-width: 480px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+    header {
+        padding: 0.2rem 0.2rem; /* Adjust padding */
+    }
+    .logo-image {
+        width: 10rem;
+        height: auto;
+    }
+    .logo-image img {
+        width: 2.5rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 1rem;
+    }
+    .top-menu ul {
+        margin-right: 1.3rem;
+        padding: 1rem 1.3rem;
+    }
     .top-menu li {
-        margin-right: 10px;
-        margin-bottom: 0;
+        margin: 2rem 1rem;
+        font-size: x-small;
+    }
+    .top-menu a {
+        font-size: small;    
+    }
+    .top-search-bar {
+        /* width: 0.03rem;
+        height: auto;
+        margin-right: 50px; */
+        display: none;
+    }
+    .blog-front {
+        padding: 0;
+        margin-right: 10rem;
+    }
+    .blog-front h2 {
+        font-size: 1.3rem;
+        margin-left: 10rem;
+    }
+    .blog-text h2 {
+        margin-left: 0.5rem;
+    }
+    .blog-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blog-text .front-end, .back-end {
+        font-size: 0.7rem;
+        width: 23rem;
+    }
+    .back-end {
+        margin-top: 20px;
+        width: 20rem;
+        height: auto;
+    }
+    .blog-text ol {
+        text-align: left;
+    }
+    .blog-text h3 {
+        margin-right: 6.5rem;
+    }
+    .create-post button {
+        display: none;
+        /* width: 4rem;
+        height: 1rem;
+        font-size: 10px;
+        align-items: center; */
+    }
+    .posts-page {
+        margin-left: 10rem;
+    }
+    .posts-page h2 {
+        font-size: 1.25rem;
+        text-align: left;
+        width: 20rem;
+        margin-left: 30px;
+    }
+    .posts-page .first-post, .second-post, .third-post {
+        width: 22rem;
+        height: 13rem;
+    }
+    .posts-page p {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .posts-page h3 {
+        font-size: 15px;
+    }
+    .posts-page img {
+        height: 100px;
+    }
+    footer p {
+        background-color: red;
+        font-size: 10px;
+        width: 25rem;
+        margin-left: 180px;
+    }
+}
+
+/* Medium screens e.g iPads, Tablets*/
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+    header {
+        padding: 1rem 1rem; /* Adjust padding */
+    }
+    .logo-image {
+        width: 15rem;
+        height: auto;
+    }
+    .logo-image img {
+        width: 4rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 1.5rem;
+    }
+    .top-menu ul {
+        margin-right: 2rem;
+        padding: 2rem 2rem;
+    }
+    .top-menu li {
+        margin: 2rem 3rem;
+        font-size: small;
+    }
+    .top-menu a {
+        font-size: large;    
+    }
+    .top-search-bar {
+        /* width: 0.03rem;
+        height: auto;
+        margin-right: 50px; */
+        display: none;
+    }
+    .blog-front h2 {
+        font-size: 2rem;
+        margin-left: 10rem;
+        margin-top: 1px;
+    }
+    .blog-text h2 {
+        margin-left: 0.5rem;
+        font-size: 1rem;
+    }
+    .blog-text .front-end, .back-end {
+        font-size: 0.7rem;
+        width: 19rem;
+        height: auto;
+        margin-left: 14rem;
+    }
+    
+    .blog-text ol {
+        text-align: left;
+    }
+    .blog-text h3 {
+        margin-right: 6.5rem;
+        font-size: small;
+    }
+    .create-post button {
+        display: none;
+        /* width: 4rem;
+        height: 1rem;
+        font-size: 10px;
+        align-items: center; */
+    }
+    .posts-page {
+        margin-left: 15rem;
+    }
+    .posts-page h2 {
+        font-size: 1.25rem;
+        text-align: left;
+        width: 20rem;
+        margin-left: 30px;
+    }
+    .posts-page .first-post, .second-post, .third-post {
+        width: 40rem;
+        height: 18rem;
+    }
+    .posts-page p {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .posts-page h3 {
+        font-size: 15px;
+    }
+    .posts-page img {
+        height: 100px;
+    }
+    footer p {
+        background-color: red;
+        font-size: 10px;
+        width: 25rem;
+        margin-left: 180px;
+    }
+}
+
+
+/* Larger sscreens e.g laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+    header {
+        padding: 1rem 1rem; /* Adjust padding */
+    }
+    .logo-image {
+        width: 20rem;
+        height: auto;
+    }
+    .logo-image img {
+        width: 30rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 2.5rem;
+    }
+    .top-menu ul {
+        margin-right: 2rem;
+        padding: 2rem 2rem;
+    }
+    .top-menu li {
+        margin: 2rem 3rem;
+        font-size: small;
+    }
+    .top-menu a {
+        font-size: x-large;    
+    }
+    .top-search-bar {
+        /* width: 0.03rem;
+        height: auto;
+        margin-right: 50px; */
+        display: none;
+    }
+    .blog-front h2 {
+        font-size: 3rem;
+        margin-left: 10rem;
+        margin-top: 1px;
+    }
+    .blog-text h2 {
+        margin-left: 0.5rem;
+        font-size: 2rem;
+    }
+    .blog-text .front-end, .back-end {
+        font-size: 1.5rem;
+        width: 30rem;
+        height: auto;
+        margin-left: 5rem;
+    }
+    
+    .blog-text ol {
+        text-align: left;
+    }
+    .blog-text h3 {
+        margin-right: 6.5rem;
+        font-size: x-large;
+    }
+    .create-post button {
+        display: none;
+        /* width: 4rem;
+        height: 1rem;
+        font-size: 10px;
+        align-items: center; */
+    }
+    .posts-page {
+        margin-left: 15rem;
+    }
+    .posts-page h2 {
+        font-size: 2rem;
+        text-align: left;
+        width: 40rem;
+        margin-left: 20px;
+    }
+    .posts-page .first-post, .second-post, .third-post {
+        width: 60rem;
+        height: 25rem;
+    }
+    .posts-page p {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .posts-page h3 {
+        font-size: 25px;
+    }
+    .posts-page img {
+        height: 180px;
+    }
+    footer p {
+        background-color: red;
+        font-size: 10px;
+        width: 60rem;
+        margin-left: 180px;
+    }   
+}
+
+/* Slightly larger screens e.g Desktops, large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+    header {
+        padding: 1rem 1rem; /* Adjust padding */
+    }
+    .logo-image {
+        width: 20rem;
+        height: auto;
+    }
+    .logo-image img {
+        width: 30rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 2.5rem;
+    }
+    .top-menu ul {
+        margin-right: 2rem;
+        padding: 2rem 2rem;
+    }
+    .top-menu li {
+        margin: 2rem 3rem;
+        font-size: small;
+    }
+    .top-menu a {
+        font-size: x-large;    
+    }
+    .top-search-bar {
+        /* width: 0.03rem;
+        height: auto;
+        margin-right: 50px; */
+        display: none;
+    }
+    .blog-front h2 {
+        font-size: 3rem;
+        margin-left: 10rem;
+        margin-top: 1px;
+    }
+    .blog-text h2 {
+        margin-left: 0.5rem;
+        font-size: 2rem;
+    }
+    .blog-text .front-end, .back-end {
+        font-size: 1.5rem;
+        width: 30rem;
+        height: auto;
+        margin-left: 5rem;
+    }
+    
+    .blog-text ol {
+        text-align: left;
+    }
+    .blog-text h3 {
+        margin-right: 6.5rem;
+        font-size: x-large;
+    }
+    .create-post button {
+        display: none;
+        /* width: 4rem;
+        height: 1rem;
+        font-size: 10px;
+        align-items: center; */
+    }
+    .posts-page {
+        margin-left: 15rem;
+    }
+    .posts-page h2 {
+        font-size: 2rem;
+        text-align: left;
+        width: 40rem;
+        margin-left: 20px;
+    }
+    .posts-page .first-post, .second-post, .third-post {
+        width: 60rem;
+        height: 25rem;
+    }
+    .posts-page p {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .posts-page h3 {
+        font-size: 25px;
+    }
+    .posts-page img {
+        height: 180px;
+    }
+    footer p {
+        background-color: red;
+        font-size: 10px;
+        width: 60rem;
+        margin-left: 180px;
+    }
+}
+
+/* Extra large screens, larger than 1200px e.g TV*/
+@media (min-width: 1201px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+    header {
+        padding: 1rem 1rem; /* Adjust padding */
+    }
+    .logo-image {
+        width: 20rem;
+        height: auto;
+    }
+    .logo-image img {
+        width: 30rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 2.5rem;
+    }
+    .top-menu ul {
+        margin-right: 2rem;
+        padding: 2rem 2rem;
+    }
+    .top-menu li {
+        margin: 2rem 3rem;
+        font-size: small;
+    }
+    .top-menu a {
+        font-size: x-large;    
+    }
+    .top-search-bar {
+        /* width: 0.03rem;
+        height: auto;
+        margin-right: 50px; */
+        display: none;
+    }
+    .blog-front h2 {
+        font-size: 3rem;
+        margin-left: 10rem;
+        margin-top: 1px;
+    }
+    .blog-text h2 {
+        margin-left: 0.5rem;
+        font-size: 2rem;
+    }
+    .blog-text .front-end, .back-end {
+        font-size: 1.5rem;
+        width: 30rem;
+        height: auto;
+        margin-left: 5rem;
+    }
+    
+    .blog-text ol {
+        text-align: left;
+    }
+    .blog-text h3 {
+        margin-right: 6.5rem;
+        font-size: x-large;
+    }
+    .create-post button {
+        display: none;
+        /* width: 4rem;
+        height: 1rem;
+        font-size: 10px;
+        align-items: center; */
+    }
+    .posts-page {
+        margin-left: 15rem;
+    }
+    .posts-page h2 {
+        font-size: 2rem;
+        text-align: left;
+        width: 40rem;
+        margin-left: 20px;
+    }
+    .posts-page .first-post, .second-post, .third-post {
+        width: 60rem;
+        height: 25rem;
+    }
+    .posts-page p {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .posts-page h3 {
+        font-size: 25px;
+    }
+    .posts-page img {
+        height: 180px;
+    }
+    footer p {
+        background-color: red;
+        font-size: 10px;
+        width: 60rem;
+        margin-left: 180px;
     }
 }
