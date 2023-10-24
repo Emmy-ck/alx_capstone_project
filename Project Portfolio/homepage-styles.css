@@ -257,7 +257,7 @@ footer {
 }
 
 /* Media query for medium screens (e.g., tablets) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     body {
         background-position: center;
         background-size: cover; /* Adjust background size */
@@ -318,5 +318,322 @@ footer {
 
     .login-form {
         max-width: 100%; /* Take up full width */
+    }
+}
+/* Small screens e.g small iphone*/
+@media (max-width: 320px) {
+    body {
+        background-position: center;
+        background-size: cover; /* Adjust background size */
+    }
+
+    header {
+        padding: 0.2rem 0.2rem; /* Adjust padding */
+    }
+    .top-menu ul {
+        margin-right: 0.7rem;
+        padding: 1rem 2.5rem;
+    }
+    .top-menu li {
+        margin-right: 1rem;
+        font-size: x-small;
+    }
+
+    .logo-image {
+        width: 10rem; /* Adjust logo image width */
+    }
+
+    .logo-image img {
+        max-width: 2rem; /* Adjust image size */
+    }
+
+    .logo-image p {
+        font-size: large; /* Adjust font size */
+    }
+    .front-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .subscribe-form {
+        
+        margin-top: 1.8rem;
+        margin-left: 3rem;
+        width: 26rem;
+    }
+
+    .front-text {
+        height: auto;
+        width: 32rem;/* Take up full width */
+    }
+
+    .front-items h1 {
+        font-size: 3rem; /* Adjust font size */
+    }
+
+    .front-text p {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .subscribe-form p {
+        font-size: 1.3rem; /* Adjust font size */
+    }
+
+    .subscribe-form button {
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+
+        &:hover {
+            background-color: greenyellow;
+            font-size: 1rem;
+        }
+    }
+
+    .login-form-container {
+        width: 100%; /* Take up full width */
+    }
+
+    .login-form {
+        max-width: 100%; /* Take up full width */
+    }
+    .footer-element {
+        width: 35rem;
+    }
+}
+/* Responsiveness for larger phone screen size*/
+@media (min-width:321px) and (max-width: 375px) {
+    body {
+        background-position: center;
+        background-size: cover; /* Adjust background size */
+    }
+
+    header {
+        padding: 0.18rem 0.18rem; /* Adjust padding */
+    }
+    .top-menu ul {
+        margin-right: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+    .top-menu li {
+        margin-right: 0.8rem;
+        margin-left: 1.5rem;
+    }
+    .top-menu a {
+        font-size: 15px;
+    }
+    .top-search-bar {
+        display: none;
+    }
+
+    .logo-image {
+        width: 10rem; /* Adjust logo image width */
+    }
+
+    .logo-image img {
+        max-width: 2rem; /* Adjust image size */
+    }
+
+    .logo-image p {
+        font-size: large; /* Adjust font size */
+    }
+    .front-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .subscribe-form {    
+        margin-top: 1.8rem;
+        margin-left: 2.5rem;
+        width: 18rem;
+    }
+
+    .front-text {
+        height: auto;
+        width: 23rem;/* Take up full width */
+    }
+
+    .front-items h1 {
+        font-size: 3rem; /* Adjust font size */
+    }
+
+    .front-text p {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .subscribe-form p {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .subscribe-form button {
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+
+        &:hover {
+            background-color: greenyellow;
+            font-size: 1rem;
+        }
+    }
+
+    .login-form-container {
+        width: 100%; /* Take up full width */
+    }
+
+    .login-form {
+        max-width: 100%; /* Take up full width */
+    }
+    .footer-element {
+        width: 27rem;
+    }
+    
+}
+
+/* Responsiveness for large phone screen sizes*/
+@media (min-width: 376px) and (max-width: 480px) {
+    body {
+        background-position: center;
+        background-size: cover; /* Adjust background size */
+    }
+
+    header {
+        padding: 0.18rem 0.18rem; /* Adjust padding */
+    }
+    .top-menu ul {
+        margin-right: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+    .top-menu li {
+        margin-right: 0.8rem;
+        margin-left: 1.5rem;
+    }
+    .top-menu a {
+        font-size: 15px;
+    }
+    .top-search-bar {
+        display: none;
+    }
+
+    .logo-image {
+        width: 10rem; /* Adjust logo image width */
+    }
+
+    .logo-image img {
+        max-width: 2rem; /* Adjust image size */
+    }
+
+    .logo-image p {
+        font-size: large; /* Adjust font size */
+    }
+    .front-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .subscribe-form {    
+        margin-top: 1.8rem;
+        margin-left: 2.5rem;
+        width: 18rem;
+    }
+    .front-text {
+        height: auto;
+        width: 23rem;/* Take up full width */
+    }
+    .front-items h1 {
+        font-size: 3rem; /* Adjust font size */
+    }
+    .front-text p {
+        font-size: 1rem; /* Adjust font size */
+    }
+    .subscribe-form p {
+        font-size: 1rem; /* Adjust font size */
+    }
+    .subscribe-form button {
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+
+        &:hover {
+            background-color: greenyellow;
+            font-size: 1rem;
+        }
+    }
+    .login-form-container {
+        width: 100%; /* Take up full width */
+    }
+    .login-form {
+        max-width: 100%; /* Take up full width */
+    }
+    .footer-element {
+        width: 27rem;
+    }
+}
+/* Responsiveness for extra large screen sizes*/
+@media (min-width: 1024px) {
+    body {
+        background-position: center;
+        background-size: cover; /* Adjust background size */
+    }
+
+    header {
+        padding: 5px 5px; /* Adjust padding */
+    }
+    .top-menu li {
+        margin-right: 6rem;
+    }
+
+    .logo-image {
+        width: 9rem; /* Adjust logo image width */
+    }
+
+    .logo-image img {
+        max-width: 3.5rem; /* Adjust image size */
+    }
+
+    .logo-image p {
+        font-size: x-large; /* Adjust font size */
+    }
+    .front-items {
+        padding: 50px 50px;
+    }
+    .subscribe-form {
+        margin-left: 0;
+    }
+
+    .front-text {
+        width: 60rem; /* Take up full width */
+    }
+
+    .front-items h1 {
+        font-size: 3.5rem; /* Adjust font size */
+    }
+
+    .front-text p {
+        font-size: 2.2rem; /* Adjust font size */
+    }
+
+    .subscribe-form {
+        margin-left: 3rem; /* Remove margin */
+    }
+
+    .subscribe-form p {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .subscribe-form button {
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+
+        &:hover {
+            background-color: greenyellow;
+            font-size: 1rem;
+        }
+    }
+
+    .login-form-container {
+        width: 100%; /* Take up full width */
+    }
+
+    .login-form {
+        max-width: 100%; /* Take up full width */
+    }
+    footer {
+        margin-top: 14rem;
     }
 }
