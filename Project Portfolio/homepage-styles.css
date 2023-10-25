@@ -191,165 +191,45 @@ footer {
     font-weight: bold;
 }
 
-/* Media Query for medium screens */
-@media (min-width: 769px) and (max-width: 1024px) {
-    body {
-        background-position: center;
-        background-size: cover; /* Adjust background size */
-    }
+/* Media query for responsive design */
 
-    header {
-        padding: 5px 5px; /* Adjust padding */
-    }
-
-    .logo-image {
-        width: 9rem; /* Adjust logo image width */
-    }
-
-    .logo-image img {
-        max-width: 3.5rem; /* Adjust image size */
-    }
-
-    .logo-image p {
-        font-size: x-large; /* Adjust font size */
-    }
-    .subscribe-form {
-        margin-left: 0;
-    }
-
-    .front-text {
-        width: 100%; /* Take up full width */
-    }
-
-    .front-items h1 {
-        font-size: 3rem; /* Adjust font size */
-    }
-
-    .front-text p {
-        font-size: 1.5rem; /* Adjust font size */
-    }
-
-    .subscribe-form {
-        margin-left: 3rem; /* Remove margin */
-    }
-
-    .subscribe-form p {
-        font-size: 1.5rem; /* Adjust font size */
-    }
-
-    .subscribe-form button {
-        padding: 8px 16px; /* Adjust padding */
-        font-size: 14px; /* Adjust font size */
-
-        &:hover {
-            background-color: greenyellow;
-            font-size: 1rem;
-        }
-    }
-
-    .login-form-container {
-        width: 100%; /* Take up full width */
-    }
-
-    .login-form {
-        max-width: 100%; /* Take up full width */
-    }
-}
-
-/* Media query for medium screens (e.g. laptops) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    body {
-        background-position: center;
-        background-size: cover; /* Adjust background size */
-    }
-
-    header {
-        padding: 5px 5px; /* Adjust padding */
-    }
-
-    .logo-image {
-        width: 9rem; /* Adjust logo image width */
-    }
-
-    .logo-image img {
-        max-width: 3.5rem; /* Adjust image size */
-    }
-
-    .logo-image p {
-        font-size: x-large; /* Adjust font size */
-    }
-    .subscribe-form {
-        margin-left: 0;
-    }
-
-    .front-text {
-        width: 100%; /* Take up full width */
-    }
-
-    .front-items h1 {
-        font-size: 3rem; /* Adjust font size */
-    }
-
-    .front-text p {
-        font-size: 1.5rem; /* Adjust font size */
-    }
-
-    .subscribe-form {
-        margin-left: 3rem; /* Remove margin */
-    }
-
-    .subscribe-form p {
-        font-size: 1.5rem; /* Adjust font size */
-    }
-
-    .subscribe-form button {
-        padding: 8px 16px; /* Adjust padding */
-        font-size: 14px; /* Adjust font size */
-
-        &:hover {
-            background-color: greenyellow;
-            font-size: 1rem;
-        }
-    }
-
-    .login-form-container {
-        width: 100%; /* Take up full width */
-    }
-
-    .login-form {
-        max-width: 100%; /* Take up full width */
-    }
-}
 /* Small screens e.g small iphone*/
 @media (max-width: 320px) {
     body {
         background-position: center;
-        background-repeat: repeat;
-        background-size: cover; /* Adjust background size */
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-
     header {
         padding: 0.2rem 0.2rem; /* Adjust padding */
     }
+    .logo-image {
+        width: 5rem;
+        height: auto;
+    }
+    .logo-image img {
+        width: 1.5rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 0.8rem;
+    }
     .top-menu ul {
-        margin-right: 0.7rem;
-        padding: 1rem 2.5rem;
+        margin-right: 0.3rem;
+        padding: 1rem 0.3rem;
     }
     .top-menu li {
-        margin-right: 1rem;
+        margin: 1rem 0.3rem;
         font-size: x-small;
     }
-
-    .logo-image {
-        width: 10rem; /* Adjust logo image width */
+    .top-menu a {
+        font-size: x-small;    
     }
-
-    .logo-image img {
-        max-width: 2rem; /* Adjust image size */
-    }
-
-    .logo-image p {
-        font-size: large; /* Adjust font size */
+    .top-search-bar {
+        /* width: 0.03rem;
+        height: auto;
+        margin-right: 50px; */
+        display: none;
     }
     .front-items {
         display: flex;
@@ -404,24 +284,42 @@ footer {
 @media (min-width:321px) and (max-width: 480px) {
     body {
         background-position: center;
-        background-size: cover; /* Adjust background size */
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-
+    body {
+        background-position: center;
+        background-size: cover;
+    }
     header {
-        padding: 0.18rem 0.18rem; /* Adjust padding */
+        padding: 0.2rem 0.2rem; /* Adjust padding */
+    }
+    .logo-image {
+        width: 5rem;
+        height: auto;
+    }
+    .logo-image img {
+        width: 1.5rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 0.8rem;
     }
     .top-menu ul {
-        margin-right: 0.5rem;
-        padding: 0.5rem 1rem;
+        margin-right: 0.3rem;
+        padding: 1rem 0.3rem;
     }
     .top-menu li {
-        margin-right: 0.8rem;
-        margin-left: 1.5rem;
+        margin: 1rem 0.3rem;
+        font-size: x-small;
     }
     .top-menu a {
-        font-size: 15px;
+        font-size: x-small;    
     }
     .top-search-bar {
+        /* width: 0.03rem;
+        height: auto;
+        margin-right: 50px; */
         display: none;
     }
 
@@ -484,7 +382,6 @@ footer {
     .footer-element {
         width: 27rem;
     }
-    
 }
 
 /* Responsiveness for large phone screen sizes*/
@@ -566,7 +463,7 @@ footer {
     }
 }
 /* Responsiveness for extra large screen sizes*/
-@media (min-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     body {
         background-position: center;
         background-size: cover; /* Adjust background size */
@@ -637,4 +534,7 @@ footer {
     footer {
         margin-top: 14rem;
     }
+}
+@media (min-width:1201px) {
+    
 }

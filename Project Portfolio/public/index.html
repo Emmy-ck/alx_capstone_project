@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subscribe to Blog</title>
+    <script>
+        function subscribe() {
+            const emailInput = document.getElementById("email");
+
+            if (validateEmail(emailInput.value)) {
+                sendEmail(emailInput.value);
+            } else {
+                alert("Enter correct email format");
+            }
+        }
+
+        function validateEmail(email) {
+            const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return re.test(email);
+        }
+
+        function sendEmail(email) {
+            const message = "Thank you for visiting my page! Looking forward to partnerships and forming more networks! Good day!";
+            
+            fetch('/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `email=${email}`,
+            })
+            .then(response => {
+                if (response.status === 200) {
+                    alert("Email sent successfully!");
+                    emailInput.value = "";
+                } else {
+                    alert("Error sending email. Please try again later.");
+                }
+            })
+            .catch(error => {
+                alert("Error sending email. Please try again later.");
+                console.error(error);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Subscribe to Our Blog</h1>
+    <form>
+        <input type="email" id="email" placeholder="Enter your email">
+        <button type="button" onclick="subscribe()">Subscribe</button>
+    </form>
+</body>
+</html>
