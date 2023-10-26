@@ -24,8 +24,10 @@ Back-End:\
     2. MySQL
 
 ## **Screenshots and demo**
-[ProjectPrototype.html](./ProjectPrototype.html)
-<img src="./Capstone Project Flowchart.drawio.png">
+[ProjectPrototype.html](./Prototype-Homepage.png)
+[ProjectPrototype.html](./Prototype-Postpage.png)
+[ProjectPrototype.html](./Prototype-Contactform.png)
+<img src="./Flowchart-Portfolio.png">
 
 ## **Roadmap and future enhancements**
 I would like to ensure that this application is fully accessible to users with disabilities, complying with accessibility standards and guidelines.
