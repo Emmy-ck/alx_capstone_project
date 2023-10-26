@@ -1,5 +1,4 @@
 body {
-    background-image: url(./assets/thread-networks-icon.jpg);
     font-family: Sofia, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,7 +75,7 @@ header {
     width: 400px;
     /* background-color: rgba(0, 255, 255, 0.3); */
 }
-.contact-info #button {
+.contact-info .submit {
     background-color: orange;
     width: 120px;
     height: 40px;
@@ -162,7 +161,7 @@ footer {
         background-repeat: no-repeat;
     }
     header {
-        padding: 0.2rem 0.2rem; /* Adjust padding */
+        margin: 0.2rem 0.2rem; /* Adjust padding */
     }
     .logo-image {
         width: 5rem;
@@ -219,7 +218,7 @@ footer {
     .back-page br {
         display: none;
     }
-    .back-page #button {
+    .back-page .submit {
         margin-left: 3rem;
 
         &:hover {
@@ -276,7 +275,7 @@ footer {
         font-size: 0.8rem;
     }
     .top-menu {
-        margin-right: 7.5rem;
+        margin-right: 0.7rem;
     }
     .top-menu ul {
         margin-right: 0.3rem;
@@ -301,10 +300,11 @@ footer {
         flex-direction: column;
     }
     .contact-info form {
-        width: 230px;
+        width: 16rem;
         height: 350px;
         display: flex;
         flex-direction: column;
+        margin-left: 3rem;
         
     }
     .contact-info #firstname, #lastname, #email, #subject {
@@ -312,7 +312,7 @@ footer {
     }
     .contact-info h2 {
         font-size: 25px;
-        margin-right: 7.5rem;
+        margin-right: 0;
     }
     .contact-info label {
         font-size: 15px;
@@ -323,9 +323,9 @@ footer {
     .back-page br {
         display: none;
     }
-    .back-page #button {
+    .back-page .submit {
         margin-top: 10px;
-        margin-left: 3rem;
+        margin-left: 4.5rem;
 
         &:hover {
             background-color: greenyellow;
@@ -333,10 +333,12 @@ footer {
     }
     .backpage-heading h2 {
         font-size: 25px;
-        margin-right: 10rem;
+        margin-right: 0;
+        margin-left: 3rem;
     }
     .email-page {
         width: 18rem;
+        margin-left: 3rem;
     }
     .email-page p {
         font-size: 1rem;
@@ -348,18 +350,19 @@ footer {
     .social-buttons img {
         width: 25px;
         height: auto;
-        margin-right: 7rem;
+        margin-right: 3rem;
     }
     .end-text {
         height: 1.8rem;
         width: 18rem;
+        margin-left: 3rem;
     }
     .end-text p {
         font-size: 0.8rem;
     }
     footer {
         height: 1.5rem;
-        width: 20rem;
+        width: 27rem;
     }
     footer p {
         font-size: 0.4rem;
@@ -388,7 +391,7 @@ footer {
         font-size: 1rem;
     }
     .top-menu {
-        margin-right: 15rem;
+        margin-right: 12rem;
     }
     .top-menu ul {
         padding: 1rem 0.3rem;
@@ -416,15 +419,15 @@ footer {
         height: 350px;
         display: flex;
         flex-direction: column;
-        margin-left: 4rem;   
+        margin-left: 8rem;   
     }
     .contact-info #firstname, #lastname, #email, #subject {
         height: 1rem;
     }
     .contact-info h2 {
         font-size: 2rem;
-        margin-right: 1rem;
-        margin-left: 10rem;
+        margin-right: 0;
+        margin-left: 14rem;
     }
     .contact-info label {
         font-size: 15px;
@@ -435,7 +438,7 @@ footer {
     .back-page br {
         display: none;
     }
-    .back-page #button {
+    .back-page .submit {
         margin-top: 10px;
         margin-left: 8rem;
 
@@ -445,11 +448,11 @@ footer {
     }
     .backpage-heading h2 {
         font-size: 2rem;
-        margin-right: 10rem;
+        margin-right: 2rem;
     }
     .email-page {
-        width: 25rem;
-        margin-left: 3.5rem;
+        width: 27rem;
+        margin-left: 7rem;
     }
     .email-page p {
         font-size: 1.3rem;
@@ -461,19 +464,19 @@ footer {
     .social-buttons img {
         width: 35px;
         height: auto;
-        margin-right: 10rem;
+        margin-right: 5rem;
     }
     .end-text {
         height: 1.8rem;
-        width: 25rem;
-        margin-left: 3rem;
+        width: 27rem;
+        margin-left: 7rem;
     }
     .end-text p {
         font-size: 0.8rem;
     }
     footer {
         height: 1.8rem;
-        width: 33rem;
+        width: 43rem;
     }
     footer p {
         font-size: 0.4rem;
@@ -502,13 +505,13 @@ footer {
         font-size: 1.3rem;
     }
     .top-menu {
-        margin-right: 20rem;
+        margin-right: 2rem;
     }
     .top-menu ul {
         padding: 1rem 3rem;
     }
     .top-menu li {
-        margin: 1rem 1.8rem;
+        margin: 1rem 3rem;
         font-size: large;
 
     }
@@ -526,7 +529,7 @@ footer {
         height: 350px;
         display: flex;
         flex-direction: column;
-        margin-left: 4rem;   
+        margin-left: 6rem;   
     }
     .contact-info #firstname, #lastname, #email, #subject {
         height: 1rem;
@@ -534,7 +537,7 @@ footer {
     .contact-info h2 {
         font-size: 2rem;
         margin-right: 1rem;
-        margin-left: 5rem;
+        margin-left: 9rem;
     }
     .contact-info label {
         font-size: 15px;
@@ -545,7 +548,7 @@ footer {
     .back-page br {
         display: none;
     }
-    .back-page #button {
+    .back-page .submit {
         margin-top: 10px;
         margin-left: 6.5rem;
 
@@ -555,19 +558,22 @@ footer {
     }
     .backpage-heading h2 {
         font-size: 2rem;
-        margin-right: 17rem;
+        margin-right: 0;
+        margin-left: 2rem;
     }
     .email-page {
-        width: 17rem;
-        margin-left: 0.2rem;
+        width: 24rem;
+        margin-left: 4rem;
+        height: 7rem;
     }
     .email-page p {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .social-buttons {
         display: flex;
         justify-content: space-between;
         width: 15rem;
+        margin-left: 8rem;
     }
     .social-buttons img {
         width: 3rem;
@@ -575,16 +581,17 @@ footer {
     }
     .end-text {
         height: 1.8rem;
-        width: 25rem;
-        margin-left: 0.8rem;
-        padding-bottom: 2rem;
+        width: 24rem;
+        margin-left: 4rem;
+        padding-bottom: 4rem;
+        margin-top: 2rem;
     }
     .end-text p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     footer {
         height: 2rem;
-        width: 45rem;
+        width: 56.5rem;
     }
     footer p {
         font-size: 0.5rem;
@@ -656,7 +663,7 @@ footer {
     .back-page br {
         display: none;
     }
-    .back-page #button {
+    .back-page .submit {
         margin-top: 10px;
         margin-left: 6rem;
 
@@ -704,5 +711,113 @@ footer {
 
 /* Media queries for extra large screens e.g TV */
 @media (min-width: 1201px) {
+    body {
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat;
+    }
+    header {
+        padding: 0.5rem 0.5rem; /* Adjust padding */
+    }
+    .logo-image {
+        width: 1rem;
+        height: auto;
+    }
+    .logo-image img {
+        width: 5rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 1.8rem;
+    }
+    .top-menu {
+        margin-right: 2rem;
+    }
+    .top-menu ul {
+        padding: 1rem 3rem;
+    }
+    .top-menu li {
+        margin: 1rem 4rem;
+        font-size: x-large;
 
+    }
+    .top-menu a {
+        font-size: large;    
+    }
+    .top-search-bar {
+        /* width: 0.03rem;
+        height: auto;
+        margin-right: 50px; */
+        display: none;
+    }
+    .contact-info form {
+        width: 18rem;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 4rem;   
+    }
+    .contact-info #firstname, #lastname, #email, #subject {
+        height: 1rem;
+    }
+    .contact-info h2 {
+        font-size: 2rem;
+        margin-right: 1rem;
+        margin-left: 5rem;
+    }
+    .contact-info label {
+        font-size: 15px;
+    }
+    input, textarea, label {
+        margin-bottom: 8px;
+    }
+    .back-page br {
+        display: none;
+    }
+    .back-page .submit {
+        margin-top: 10px;
+        margin-left: 6rem;
+
+        &:hover {
+            background-color: greenyellow;
+        }
+    }
+    .backpage-heading h2 {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+    .email-page {
+        width: 25rem;
+        height: 7rem;
+        margin-left: 5rem;
+    }
+    .email-page p {
+        font-size: 1.5rem;
+    }
+    .social-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 20rem;
+        margin-left: 8rem;
+    }
+    .social-buttons img {
+        width: 3rem;
+        height: auto;
+    }
+    .end-text {
+        height: 4rem;
+        width: 27rem;
+        margin-left: 4rem;
+        padding-bottom: 2rem;
+    }
+    .end-text p {
+        font-size: 1.3rem;
+    }
+    footer {
+        height: 2rem;
+        width: 79rem;
+    }
+    footer p {
+        font-size: 0.5rem;
+    }
 }

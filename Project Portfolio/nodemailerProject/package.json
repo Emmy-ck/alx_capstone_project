@@ -1,0 +1,22 @@
+{
+  "name": "nodemailerproject",
+  "version": "1.0.0",
+  "description": "Node mailer project",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log('Hello')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "CK",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7"
+  }
+}

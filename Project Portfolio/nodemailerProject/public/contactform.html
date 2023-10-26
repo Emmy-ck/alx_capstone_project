@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="backpage-styles.css">
+    <link rel="stylesheet" href="./css/contactform-styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <style>
         body {
             font-family: "Sofia", sans-serif;
+            background-image: url(./assets/thread-networks-icon.jpg);
         }
     </style>
 </head>
@@ -23,7 +24,7 @@
                 <ul>
                     <li><a href="homepage-index.html">HOME</a></li>
                     <li><a href="blogposts-index.html">PROJECTS</a></li>
-                    <li><a href="backpage-index.html">CONTACT</a></li>
+                    <li><a href="contactform.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +35,7 @@
     <div class="back-page">
         <div class="contact-info">
             <h2>Get in Touch</h2>
-            <form action="#" method="post">
+            <form method="post">
                 <label for="firstname">First Name:</label>
                 <input type="text" id="firstname" name="FirstName" required>
                 <br><br>
@@ -55,7 +56,7 @@
                 <textarea id="message" name="message" required></textarea>
                 <br><br>
 
-                <input type="submit" id="button" value="Submit">
+                <input type="submit" class="submit" value="Submit">
             </form>
         </div>
         <div class="backpage-info">
@@ -80,5 +81,6 @@
         <p>&copy; 2023 C Kenduiwa. All rights reserved.</p>
         <p>Designed and developed by Emmy Kenduiwa</p>
     </footer>
+    <script src="./js/app.js"></script>
 </body>
 </html>

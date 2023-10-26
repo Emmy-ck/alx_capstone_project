@@ -1,83 +1,45 @@
-const http = require('http');
-const fs = require('fs');
-const url = require('url');
-const nodemailer = require('nodemailer');
-const qs = require('querystring');
+const express = require('express');
+const app = express();
 
-const port = 5501;
+const PORT = process.env.PORT || 5000;
 
-// Serve the HTML page
-const server = http.createServer((req, res) => {
-    const parsedUrl = url.parse(req.url, true);
-    const path = parsedUrl.pathname;
+app.use(express.static('public'));
+app.use(express.json())
 
-    if (path === '/') {
-        fs.readFilefs.readFile('public/index.html', (err, data) => {
-            if (err) {
-                res.writeHead(500, { 'Content-Type': 'text/plain' });
-                res.end('Internal Server Error');
-            } else {
-                res.writeHead(200, { 'Content-Type': 'text/html' });
-                res.end(data);
-            }
-        });
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/contactform.html')
+})
+
+// Creating a POST route
+app.post('/submit', (req, res)=>{
+    console.log(req.body);
+
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'chronicdev225@gmail.com',
+            pass: 'ChronicMangoes225'
+        }
+    })
+
+    const mailOptions = {
+        from: req.body.email,
+        to: 'chronicdev225@gmail.com',
+        subject: `Message from ${req.body.email}: ${req.body.subject}`,
+        text: req.body.message
     }
-});
 
-// Nodemailer configuration
-const transporter = nodemailer.createTransport({
-    service: 'Gmail',
-    auth: {
-        user: 'ckenduiwa9876@gmail.com',
-        pass: 'SeptembeR11!'
-    }
-});
+    transporter.sendMail(mailOptions, (error, info)=>{
+        if(error){
+            console.log(error);
+            res.send('error');
+        } else {
+            console.log('Email sent: ' + info.response);
+            res.send('success');
+        }
+    });
+})
 
-// Handling form submission
-server.on('request', (req, res) => {
-    if (req.method === 'POST') {
-        let body = '';
-
-        req.on('data', (chunk) => {
-            body += chunk;
-        });
-
-        req.on('end', () => {
-            const formData = qs.parse(body);
-            const email = formData.email;
-
-            // Validation
-            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-            if (!emailRegex.test(email)) {
-                res.writeHead(400, { 'Content-Type': 'text/plain' });
-                res.end('Enter correct email format');
-                return;
-            }
-
-            // Email options
-            const mailOptions = {
-                from: 'ckenduiwa9876@gmail.com',
-                to: email,
-                subject: 'Thank you for subscribing to my blog',
-                text: 'Thank you for visiting my page! Looking forward to partnerships and forming more networks. Good day!'
-            };
-
-            // Sending the email
-            transporter.sendMail(mailOptions, (error, info) => {
-                if (error) {
-                    console.log(error);
-                    res.writeHead(500, { 'Content-Type': 'text/plain' });
-                    res.end('Error sending email');
-                } else {
-                    console.log('Email sent: ' + info.response);
-                    res.writeHead(200, { 'Content-Type': 'text/plain' });
-                    res.end('Email sent successfully!');
-                }
-            });
-        });
-    }
-});
-
-server.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+app.listen(PORT, ()=>{
+    console.log(`Server running on port ${PORT}`)
+})
