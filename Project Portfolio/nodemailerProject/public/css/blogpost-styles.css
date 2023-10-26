@@ -799,3 +799,101 @@ footer p {
         margin-left: 180px;
     }
 }
+
+/* Media queries */
+@media (min-width: 1201px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+    header {
+        padding: 1rem 1rem; /* Adjust padding */
+    }
+    .logo-image {
+        width: 20rem;
+        height: auto;
+    }
+    .logo-image img {
+        width: 30rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 2.5rem;
+    }
+    .top-menu ul {
+        margin-right: 2rem;
+        padding: 2rem 2rem;
+    }
+    .top-menu li {
+        margin: 2rem 3rem;
+        font-size: small;
+    }
+    .top-menu a {
+        font-size: x-large;    
+    }
+    .top-search-bar {
+        /* width: 0.03rem;
+        height: auto;
+        margin-right: 50px; */
+        display: none;
+    }
+    .blog-front h2 {
+        font-size: 3rem;
+        margin-left: 10rem;
+        margin-top: 1px;
+    }
+    .blog-text h2 {
+        margin-left: 0.5rem;
+        font-size: 2rem;
+    }
+    .blog-text .front-end, .back-end {
+        font-size: 1.5rem;
+        width: 30rem;
+        height: auto;
+        margin-left: 5rem;
+    }
+    
+    .blog-text ol {
+        text-align: left;
+    }
+    .blog-text h3 {
+        margin-right: 6.5rem;
+        font-size: x-large;
+    }
+    .create-post button {
+        display: none;
+        /* width: 4rem;
+        height: 1rem;
+        font-size: 10px;
+        align-items: center; */
+    }
+    .posts-page {
+        margin-left: 15rem;
+    }
+    .posts-page h2 {
+        font-size: 2rem;
+        text-align: left;
+        width: 40rem;
+        margin-left: 20px;
+    }
+    .posts-page .first-post, .second-post, .third-post {
+        width: 60rem;
+        height: 25rem;
+    }
+    .posts-page p {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .posts-page h3 {
+        font-size: 25px;
+    }
+    .posts-page img {
+        height: 180px;
+    }
+    footer p {
+        background-color: red;
+        font-size: 10px;
+        width: 60rem;
+        margin-left: 180px;
+    }
+}
