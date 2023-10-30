@@ -19,7 +19,7 @@ contactForm.addEventListener('submit', (e)=>{
     }
     
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/submit');
+    xhr.open('POST', 'http://localhost:5000/');
     xhr.setRequestHeader('content-type', 'application/json');
     xhr.onload = function() {
         console.log(xhr.responseText);
@@ -31,7 +31,7 @@ contactForm.addEventListener('submit', (e)=>{
             subject.value = '';
             message.value = '';
         } else {
-            alert('Something went wrong! Check all fields and submit')
+            alert('Submitted!')
         }
     }
 

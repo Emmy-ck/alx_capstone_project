@@ -254,7 +254,7 @@ footer {
 }
 
 /* Media wueries for screens like mobile device */
-@media (min-width: 321px) and (max-width: 480px) {
+@media (max-width: 375px) {
     body {
         background-position: center;
         background-size: cover;

@@ -4,19 +4,22 @@
   "description": "Node mailer project",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
     "test": "console.log('Hello')"
   },
   "repository": {
     "type": "git",
     "url": "none"
   },
-  "keywords": [
-    "none"
-  ],
+  "keywords": [],
   "author": "CK",
-  "license": "UNLICENSED",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
     "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "3.0.1"
   }
 }
