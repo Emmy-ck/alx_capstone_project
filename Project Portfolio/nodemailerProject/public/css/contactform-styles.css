@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.62rem 0.62rem;
+    padding: 0.52rem 0.52rem;
 }
 
 .logo-image {
@@ -157,18 +157,20 @@ footer {
 @media (max-width: 320px) {
     body {
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
+        overflow-x: hidden;
+        width: 100%;
     }
     header {
-        margin: 0.2rem 0.2rem; /* Adjust padding */
+        margin: 0.2rem 0.2rem; /*Adjust padding*/
     }
     .logo-image {
-        width: 5rem;
+        width: 3rem;
         height: auto;
     }
     .logo-image img {
-        width: 1.5rem;
+        width: 1rem;
         height: auto;
     }
     .logo-image p {
@@ -177,6 +179,7 @@ footer {
     .top-menu ul {
         margin-right: 0.3rem;
         padding: 1rem 0.3rem;
+        margin-left: 6rem;
     }
     .top-menu li {
         margin: 1rem 0.3rem;
@@ -186,9 +189,6 @@ footer {
         font-size: x-small;    
     }
     .top-search-bar {
-        /* width: 0.03rem;
-        height: auto;
-        margin-right: 50px; */
         display: none;
     }
     .back-page {
@@ -200,20 +200,21 @@ footer {
         height: 350px;
         display: flex;
         flex-direction: column;
-        
     }
     .contact-info #firstname, #lastname, #email, #subject {
         height: 1rem;
     }
     .contact-info h2 {
         font-size: 25px;
-        margin-right: 7.5rem;
     }
     .contact-info label {
         font-size: 15px;
     }
     input, textarea, label {
         margin-bottom: 8px;
+    }
+    .back-page {
+        width: 350px;
     }
     .back-page br {
         display: none;
@@ -247,9 +248,14 @@ footer {
     }
     footer {
         height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        max-width: 95%;
     }
     footer p {
         font-size: 0.4rem;
+        margin: 10px;
     }
 }
 
@@ -259,6 +265,7 @@ footer {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        max-width: 375px;
     }
     header {
         padding: 0.2rem 0.2rem; /* Adjust padding */
@@ -268,18 +275,19 @@ footer {
         height: auto;
     }
     .logo-image img {
-        width: 2rem;
+        width: 1rem;
         height: auto;
     }
     .logo-image p {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
     .top-menu {
-        margin-right: 0.7rem;
+        width: 80%;
     }
     .top-menu ul {
         margin-right: 0.3rem;
         padding: 1rem 0.3rem;
+        margin-left: 1rem;
     }
     .top-menu li {
         margin: 1rem 0.8rem;
@@ -299,12 +307,150 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    .contact-info {
+        width: 80%;
+        margin-left: 20px;
+    }
+    #contact-form {
+        width: 85%;
+        margin-left: 0;
+    }
     .contact-info form {
-        width: 16rem;
+        width: 15rem;
         height: 350px;
         display: flex;
         flex-direction: column;
+        margin-left: 0;
+    }
+    .contact-info #firstname, #lastname, #email, #subject {
+        height: 1rem;
+    }
+    .contact-info h2 {
+        font-size: 25px;
+        margin-right: 0;
+    }
+    .contact-info label {
+        font-size: 15px;
+    }
+    input, textarea, label {
+        margin-bottom: 8px;
+    }
+    .back-page br {
+        display: none;
+    }
+    .backpage-info {
+        width: 80%;
+    }
+    .back-page .submit {
+        margin-top: 10px;
+        margin-left: 4.5rem;
+
+        &:hover {
+            background-color: greenyellow;
+        }
+    }
+    .backpage-heading h2 {
+        font-size: 25px;
+        margin-right: 0;
+        margin-left: 1rem;
+    }
+    .email-page {
+        width: 100%;
+        margin-left: 1rem;
+    }
+    .email-page p {
+        font-size: 1rem;
+    }
+    .social-buttons {
+        display: flex;
+        justify-content: center;
+        margin-left: 5rem;
+    }
+    .social-buttons img {
+        width: 25px;
+        height: auto;
+        margin-right: 4rem;
+    }
+    .end-text {
+        height: 1.8rem;
+        width: 100%;
+        margin-left: 1rem;
+    }
+    .end-text p {
+        font-size: 0.8rem;
+    }
+    footer {
+        height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        max-width: 95%;
+    }
+    footer p {
+        font-size: 0.4rem;
+        margin: 10px;
+    }
+}
+
+/* Media query for screen size with max-width 425px */
+@media (max-width: 425px) {
+    body {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 425px;
+    }
+    header {
+        padding: 0.2rem 0.2rem; /* Adjust padding */
+    }
+    .logo-image {
+        width: 1rem;
+        height: auto;
+    }
+    .logo-image img {
+        width: 2rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 0.6rem;
+    }
+    .top-menu {
+        width: 80%;
+    }
+    .top-menu ul {
+        margin-right: 0.3rem;
+        padding: 1rem 0.3rem;
         margin-left: 3rem;
+    }
+    .top-menu li {
+        margin: 1rem 0.8rem;
+        font-size: x-small;
+
+    }
+    .top-menu a {
+        font-size: x-small;    
+    }
+    .top-search-bar {
+        /* width: 0.03rem;
+        height: auto;
+        margin-right: 50px; */
+        display: none;
+    }
+    .back-page {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 80%;
+        margin-left: 20px;
+    }
+    .contact-info form {
+        width: 18rem;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.6rem;
+        padding-left: 10px;
         
     }
     .contact-info #firstname, #lastname, #email, #subject {
@@ -323,6 +469,9 @@ footer {
     .back-page br {
         display: none;
     }
+    .backpage-info {
+        width: 80%;
+    }
     .back-page .submit {
         margin-top: 10px;
         margin-left: 4.5rem;
@@ -334,11 +483,11 @@ footer {
     .backpage-heading h2 {
         font-size: 25px;
         margin-right: 0;
-        margin-left: 3rem;
+        margin-left: 1rem;
     }
     .email-page {
-        width: 18rem;
-        margin-left: 3rem;
+        width: 100%;
+        margin-left: 1rem;
     }
     .email-page p {
         font-size: 1rem;
@@ -346,31 +495,36 @@ footer {
     .social-buttons {
         display: flex;
         justify-content: center;
+        margin-left: 5rem;
     }
     .social-buttons img {
         width: 25px;
         height: auto;
-        margin-right: 3rem;
+        margin-right: 4rem;
     }
     .end-text {
         height: 1.8rem;
-        width: 18rem;
-        margin-left: 3rem;
+        width: 100%;
+        margin-left: 1rem;
     }
     .end-text p {
         font-size: 0.8rem;
     }
     footer {
         height: 1.5rem;
-        width: 27rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        max-width: 95%;
     }
     footer p {
         font-size: 0.4rem;
+        margin: 10px;
     }
 }
 
 /* Media queries for medium screens e.g iPads, Tablets */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     body {
         background-position: center;
         background-size: cover;
@@ -388,10 +542,10 @@ footer {
         height: auto;
     }
     .logo-image p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .top-menu {
-        margin-right: 12rem;
+        margin-right: 5rem;
     }
     .top-menu ul {
         padding: 1rem 0.3rem;
@@ -402,32 +556,29 @@ footer {
 
     }
     .top-menu a {
-        font-size: small;    
+        font-size: small;   
     }
     .top-search-bar {
-        /* width: 0.03rem;
-        height: auto;
-        margin-right: 50px; */
         display: none;
     }
     .back-page {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     .contact-info form {
-        width: 22rem;
+        width: 16rem;
         height: 350px;
         display: flex;
         flex-direction: column;
-        margin-left: 8rem;   
+        margin-left: 3rem;   
     }
     .contact-info #firstname, #lastname, #email, #subject {
         height: 1rem;
     }
     .contact-info h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
         margin-right: 0;
-        margin-left: 14rem;
+        margin-left: 3rem;
     }
     .contact-info label {
         font-size: 15px;
@@ -447,12 +598,12 @@ footer {
         }
     }
     .backpage-heading h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
         margin-right: 2rem;
     }
     .email-page {
-        width: 27rem;
-        margin-left: 7rem;
+        width: 21rem;
+        margin-left: 0.2rem;
     }
     .email-page p {
         font-size: 1.3rem;
@@ -468,18 +619,22 @@ footer {
     }
     .end-text {
         height: 1.8rem;
-        width: 27rem;
-        margin-left: 7rem;
+        width: 21rem;
+        margin-left: 0.2rem;
     }
     .end-text p {
         font-size: 0.8rem;
     }
     footer {
-        height: 1.8rem;
-        width: 43rem;
+        height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        max-width: 100%;
     }
     footer p {
-        font-size: 0.4rem;
+        font-size: 0.7rem;
+        margin: 10px;
     }
 }
 
@@ -590,11 +745,15 @@ footer {
         font-size: 1.5rem;
     }
     footer {
-        height: 2rem;
-        width: 56.5rem;
+        height: 1.5rem;
+        display: flex;
+        gap: 30px;
+        background-color: rgba(253, 22, 1, 0.411);
+        max-width: 100%;
     }
     footer p {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
+        margin-left: 200px;
     }
 }
 
@@ -701,11 +860,15 @@ footer {
         font-size: 1rem;
     }
     footer {
-        height: 2rem;
-        width: 45rem;
+        height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        max-width: 95%;
     }
     footer p {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
+        margin: 10px;
     }
 }
 
@@ -745,17 +908,14 @@ footer {
         font-size: large;    
     }
     .top-search-bar {
-        /* width: 0.03rem;
-        height: auto;
-        margin-right: 50px; */
         display: none;
     }
     .contact-info form {
-        width: 18rem;
+        width: 23rem;
         height: 350px;
         display: flex;
         flex-direction: column;
-        margin-left: 4rem;   
+        margin-left: 1rem;   
     }
     .contact-info #firstname, #lastname, #email, #subject {
         height: 1rem;
@@ -787,7 +947,7 @@ footer {
         margin-right: 0;
     }
     .email-page {
-        width: 25rem;
+        width: 100%;
         height: 7rem;
         margin-left: 5rem;
     }
@@ -797,7 +957,7 @@ footer {
     .social-buttons {
         display: flex;
         justify-content: space-between;
-        width: 20rem;
+        width: 30rem;
         margin-left: 8rem;
     }
     .social-buttons img {
@@ -805,19 +965,24 @@ footer {
         height: auto;
     }
     .end-text {
-        height: 4rem;
-        width: 27rem;
+        height: 2.5rem;
+        width: 100%;
         margin-left: 4rem;
         padding-bottom: 2rem;
     }
     .end-text p {
-        font-size: 1.3rem;
+        font-size: 25px;
     }
     footer {
-        height: 2rem;
-        width: 79rem;
+        height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        max-width: 100%;
+        margin-top: 70px;
     }
     footer p {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
+        margin: 10px;
     }
 }

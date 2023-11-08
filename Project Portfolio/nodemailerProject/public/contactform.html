@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: "Sofia", sans-serif;
-            background-image: url(./assets/thread-networks-icon.jpg);
+            background-image: url("./assets/cole-freeman-yH3FKw3-ahg-unsplash.jpg");
         }
     </style>
 </head>
@@ -35,7 +35,7 @@
     <div class="back-page">
         <div class="contact-info">
             <h2>Get in Touch</h2>
-            <form method="post" action="/">
+            <form method="post" action="/sendEmail" id="contact-form">
                 <label for="firstname">First Name:</label>
                 <input type="text" id="firstname" name="firstname" required>
                 <br><br>
@@ -81,6 +81,47 @@
         <p>&copy; 2023 C Kenduiwa. All rights reserved.</p>
         <p>Designed and developed by Emmy Kenduiwa</p>
     </footer>
-    <script src="./js/app.js"></script>
+    <script>
+        // Add event listener to the form for when it is submitted
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            // Gather form data
+            const firstName = document.getElementById("firstname").value;
+            const lastName = document.getElementById("lastname").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+
+            // Create form data object to send to the server
+            const formData = {
+                firstName,
+                lastName,
+                email,
+                subject,
+                message,
+            };
+
+            // Send form data to the server for email sending
+            fetch("/sendEmail", {
+                method: "POST",
+                headers: {
+                    "Content-Type" : "application/json",
+                },
+                body: JSON.stringify(formData),
+            })
+                .then((response) => response.json())
+                .then((result) => {
+                    if (result.success) {
+                        alert("Email sent successfully!");
+                    } else {
+                        alert("Failed to send email.")
+                    }
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+        });
+    </script>
 </body>
 </html>

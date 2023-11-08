@@ -3,21 +3,18 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
 }
-
 .logo-image {
     display: flex;
     align-items: center;
     width: 250px;
     
 }
-
 .logo-image img {
     max-width: 80px;
     margin-right: 10px;
@@ -33,7 +30,6 @@ header {
 }
 
 /* Style top menu and navigation links*/
-
 .top-menu ul {
     list-style: none;
     padding: 0;
@@ -103,87 +99,15 @@ header {
 .subscribe-form button:hover {
     background-color: greenyellow;
 }
-/* Add styles for the login form container */
-.login-form-container {
-    display: none; /* Initially hide the login form */
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 5cm; /* Adjust as needed */
-    height: 8cm;
-    background-color: rgba; /* Semi transparent background*/
-    padding: 20px;
-    box-shadow: -3px 0 5px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-}
-
-/* Style the login form inside the container */
-.login-form {
-    text-align: center;
-    border-radius: 5px;
-    margin: 5% auto; /* Center the form vertically and horizontally */
-    padding: 20px;
-    max-width: 400px; /* Adjust as needed */
-    box-shadow: 0 0 10px;
-}
-.login-form h3 {
-    text-align: center;
-    font-size: 24px;
-    margin: 0 0 20px;
-    color: #333;
-}
-.login-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-
-.login-form input[type="text"],
-.login-form input[type="password"],
-.login-form input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.login-form button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 12px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.login-form button:hover {
-  background-color: #0056b3;
-}
-
-.login-form a {
-  text-decoration: none;
-  color: #007BFF;
-  font-weight: bold;
-}
-
-.login-form a:hover {
-  text-decoration: underline;
-}
- /* Styles for footer */
 footer {
     padding: 10px;
     text-align: center;
 }
-
 .footer-element {
     background-color: rgba(128, 0, 128, 0.5);
     align-items: center;
     border-radius: 1rem;
 }
-
 .footer-element p {
     font-size: 0.8rem;
     color: black;
@@ -196,18 +120,19 @@ footer {
 @media (max-width: 320px) {
     body {
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
+        width: 100%;
     }
     header {
-        padding: 0.2rem 0.2rem; /* Adjust padding */
+        margin: 0.2rem 0.2rem; /*Adjust padding*/
     }
     .logo-image {
-        width: 5rem;
+        width: 3rem;
         height: auto;
     }
     .logo-image img {
-        width: 1.5rem;
+        width: 1rem;
         height: auto;
     }
     .logo-image p {
@@ -216,6 +141,7 @@ footer {
     .top-menu ul {
         margin-right: 0.3rem;
         padding: 1rem 0.3rem;
+        margin-left: 6rem;
     }
     .top-menu li {
         margin: 1rem 0.3rem;
@@ -225,39 +151,31 @@ footer {
         font-size: x-small;    
     }
     .top-search-bar {
-        /* width: 0.03rem;
-        height: auto;
-        margin-right: 50px; */
         display: none;
     }
     .front-items {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
-    .subscribe-form {
-        
+    .subscribe-form {    
         margin-top: 1.8rem;
         margin-left: 3rem;
         width: 26rem;
     }
-
     .front-text {
         height: auto;
-        width: 32rem;/* Take up full width */
+        width: 60%;
     }
-
-    .front-items h1 {
-        font-size: 3rem; /* Adjust font size */
+    .front-text h1 {
+        font-size: 0.8rem;
     }
-
     .front-text p {
         font-size: 1.5rem; /* Adjust font size */
     }
-
     .subscribe-form p {
         font-size: 1.3rem; /* Adjust font size */
     }
-
     .subscribe-form button {
         padding: 8px 16px; /* Adjust padding */
         font-size: 14px; /* Adjust font size */
@@ -267,20 +185,12 @@ footer {
             font-size: 1rem;
         }
     }
-
-    .login-form-container {
-        width: 100%; /* Take up full width */
-    }
-
-    .login-form {
-        max-width: 100%; /* Take up full width */
-    }
     .footer-element {
         width: 35rem;
     }
 }
 /* Responsiveness for larger phone screen size*/
-@media (min-width:321px) and (max-width: 480px) {
+@media (max-width: 375px) {
     body {
         background-position: center;
         background-size: cover;

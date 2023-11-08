@@ -1,7 +1,6 @@
 body {
     font-family: Sofia, sans-serif;
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -9,18 +8,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: 0.52rem 0.52rem;
 }
 
 .logo-image {
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 8px;
     
 }
 
 .logo-image img {
-    max-width: 80px;
     margin-right: 10px;
     width: 100%;
     height: 100%;
@@ -140,22 +138,22 @@ header {
 .firstpost-text p, .secondpost-text p, .thirdpost-text p {
     font-size: 40px;
     color: black;
+    text-align: center;
 }
 
 /* Style the blog post image */
 .firstpost-image, .secondpost-image, .thirdpost-image {
-    max-width: 45%;
+    width: 45%;
 }
 .firstpost-image img, .secondpost-image img, .thirdpost-image img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .first-post {
-    background-color: rgba(163, 1, 188, 0.566);
+    background-color: rgba(163, 1, 188, 0.2);
     border-radius: 20px;
 }
 .firstpost-text p {
-    background-color: rgba(191, 255, 101, 0.256);
     border-radius: 20px;
 }
 
@@ -164,7 +162,7 @@ header {
 }
 
 .second-post {
-    background-color: rgba(157, 241, 40, 0.5);
+    background-color: rgba(157, 241, 40, 0.2);
     border-radius: 20px;
 }
 
@@ -173,17 +171,15 @@ header {
 }
 
 .secondpost-text {
-    background-color: rgba(255, 0, 0, 0.341);
     border-radius: 20px;
 }
 
 .third-post {
-    background-color: rgba(236, 110, 21, 0.742);
+    background-color: rgba(236, 110, 21, 0.2);
     border-radius: 20px;
 }
 
 .thirdpost-text {
-    background-color: rgba(0, 255, 255, 0.363);
     border-radius: 20px;
 }
 
@@ -196,28 +192,33 @@ footer p {
 }
 /* Media Queries for Responsive Design */
 /* Media queries for screens smaller than 320px*/
-@media  (max-width: 320px) {
+@media (max-width: 320px) {
     body {
         background-position: center;
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        width: 320px;
     }
     header {
-        padding: 0.2rem 0.2rem; /* Adjust padding */
+        width: 300px;
+        margin: 0.2rem 0.2rem; /*Adjust padding*/
     }
     .logo-image {
-        width: 5rem;
+        width: 3rem;
         height: auto;
     }
     .logo-image img {
-        width: 1.5rem;
+        width: 1rem;
         height: auto;
     }
     .logo-image p {
-        font-size: 0.5rem;
+        font-size: 8rem;
     }
     .top-menu ul {
         margin-right: 0.3rem;
         padding: 1rem 0.3rem;
+        margin-left: 6rem;
     }
     .top-menu li {
         margin: 1rem 0.3rem;
@@ -227,34 +228,85 @@ footer p {
         font-size: x-small;    
     }
     .top-search-bar {
-        /* width: 0.03rem;
+        display: none;
+    }
+    footer {
+        height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        max-width: 95%;
+    }
+    footer p {
+        font-size: 0.4rem;
+        margin: 10px;
+    }
+}
+
+/* Small screens like Mobile Devices */
+@media (max-width: 375px) {
+    body {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 375px;
+    }
+    header {
+        padding: 0.2rem 0.2rem; /* Adjust padding */
+    }
+    .logo-image {
+        width: 1rem;
         height: auto;
-        margin-right: 50px; */
+    }
+    .logo-image img {
+        width: 1rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 0.5rem;
+    }
+    .top-menu {
+        width: 80%;
+    }
+    .top-menu ul {
+        margin-right: 0.3rem;
+        padding: 1rem 0.3rem;
+        margin-left: 1rem;
+    }
+    .top-menu li {
+        margin: 1rem 0.8rem;
+        font-size: x-small;
+    }
+    .top-menu a {
+        font-size: x-small;    
+    }
+    .top-search-bar {
         display: none;
     }
     .blog-front {
+        width: 100%;
         padding: 0;
-        margin-right: 60rem;
     }
     .blog-front h2 {
         font-size: 1rem;
-        margin-left: 18rem;
+        margin: 0;
     }
     .blog-text h2 {
-        margin-left: 1rem;
+        margin-left: 0.5rem;
+        font-size: 1rem;
     }
     .blog-text {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
     }
     .blog-text .front-end, .back-end {
         font-size: 0.5rem;
-        width: 19rem;
+        width: 100%;
     }
     .back-end {
         margin-top: 20px;
-        width: 16.5rem;
+        width: 20rem;
         height: auto;
     }
     .blog-text ol {
@@ -265,22 +317,19 @@ footer p {
     }
     .create-post button {
         display: none;
-        /* width: 4rem;
-        height: 1rem;
-        font-size: 10px;
-        align-items: center; */
     }
     .posts-page {
-        margin-left: 18.75rem;
+        width: 100%;
+        margin: 0;
     }
     .posts-page h2 {
-        font-size: 1.25rem;
-        text-align: left;
-        width: 16rem;
+        font-size: 1rem;
+        width: 100%;
         margin-left: 100px;
     }
     .posts-page .first-post, .second-post, .third-post {
-        width: 250px;
+        width: 80%;
+        height: auto;
     }
     .posts-page p {
         font-size: 10px;
@@ -288,30 +337,164 @@ footer p {
     }
     .posts-page h3 {
         font-size: 10px;
+        margin: 0;
     }
     .posts-page img {
+        width: 100%;
         height: 100px;
+        border: 1px solid aqua;
+    }
+    .posts-page a {
+        font-size: 12px;
+        color: blue;
+    }
+    footer {
+        height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        max-width: 100%;
     }
     footer p {
-        background-color: red;
-        font-size: 10px;
-        width: 300px;
-        margin-left: 300px;
+        font-size: 0.4rem;
+        margin: 10px;
     }
 }
 
-
-/* Small screens like Mobile Devices */
-@media (min-width:321px) and (max-width: 480px) {
+/* Media querry for Small screens like tablets */
+@media (max-width: 425px) {
     body {
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 425px;
     }
     header {
+        width: 80%;
         padding: 0.2rem 0.2rem; /* Adjust padding */
     }
     .logo-image {
-        width: 10rem;
+        width: 2rem;
+        height: auto;
+    }
+    .logo-image img {
+        width: 2rem;
+        height: auto;
+    }
+    .logo-image p {
+        font-size: 1rem;
+    }
+    .top-menu ul {
+        margin-right: 0.3rem;
+        padding: 1rem 0.3rem;
+        margin-left: 8rem;
+    }
+    .top-menu li {
+        margin: 1rem 0.8rem;
+        font-size: x-small;
+    }
+    .top-menu a {
+        font-size: x-small;    
+    }
+    .top-search-bar {
+        display: none;
+    }
+    .blog-front {
+        width: 100%;
+        padding: 0;
+    }
+    .blog-front h2 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .blog-text h2 {
+        margin-left: 0.5rem;
+        font-size: 1rem;
+    }
+    .blog-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .blog-text .front-end, .back-end {
+        font-size: 0.5rem;
+        width: 110%;
+    }
+    .back-end {
+        margin-top: 20px;
+        width: 24rem;
+        height: auto;
+    }
+    .back-end h3 {
+        text-align: center;
+    }
+    .blog-text ol {
+        text-align: left;
+    }
+    .blog-text h3 {
+        margin-right: 6.5rem;
+    }
+    .create-post button {
+        display: none;
+    }
+    .posts-page {
+        width: 100%;
+        margin: 0;
+    }
+    .posts-page h2 {
+        font-size: 1rem;
+        width: 100%;
+        margin-left: 100px;
+    }
+    .posts-page .first-post, .second-post, .third-post {
+        width: 100%;
+        height: auto;
+        margin-left: 3rem;
+    }
+    .posts-page p {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .posts-page h3 {
+        font-size: 10px;
+        margin: 0;
+    }
+    .posts-page img {
+        width: 100%;
+        height: 100px;
+        border: 1px solid aqua;
+    }
+    .posts-page a {
+        font-size: 12px;
+        color: blue;
+    }
+    footer {
+        height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        width: 100%;
+    }
+    footer p {
+        font-size: 0.4rem;
+        margin: 10px;
+    }
+}
+
+/* Medium screens e.g iPads, Tablets*/
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 750px;
+    }
+    header {
+        width: 80%;
+        padding: 0.2rem 0.2rem; /* Adjust padding */
+    }
+    .logo-image {
+        width: 2.5rem;
         height: auto;
     }
     .logo-image img {
@@ -319,134 +502,30 @@ footer p {
         height: auto;
     }
     .logo-image p {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .top-menu ul {
-        margin-right: 1.3rem;
-        padding: 1rem 1.3rem;
+        margin-right: 1rem;
+        padding: 1rem 0.3rem;
+        margin-left: 5rem;
     }
     .top-menu li {
-        margin: 2rem 1rem;
-        font-size: x-small;
+        margin-left: 0;
+        margin-right: 3rem;
+        font-size: small;
     }
     .top-menu a {
         font-size: small;    
     }
     .top-search-bar {
-        /* width: 0.03rem;
-        height: auto;
-        margin-right: 50px; */
-        display: none;
+       display: none;
     }
     .blog-front {
-        padding: 0;
-        margin-right: 10rem;
+        width: 100%;
     }
     .blog-front h2 {
-        font-size: 1.3rem;
-        margin-left: 10rem;
-    }
-    .blog-text h2 {
-        margin-left: 0.5rem;
-    }
-    .blog-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .blog-text .front-end, .back-end {
-        font-size: 0.7rem;
-        width: 23rem;
-    }
-    .back-end {
-        margin-top: 20px;
-        width: 20rem;
-        height: auto;
-    }
-    .blog-text ol {
-        text-align: left;
-    }
-    .blog-text h3 {
-        margin-right: 6.5rem;
-    }
-    .create-post button {
-        display: none;
-        /* width: 4rem;
-        height: 1rem;
-        font-size: 10px;
-        align-items: center; */
-    }
-    .posts-page {
-        margin-left: 10rem;
-    }
-    .posts-page h2 {
-        font-size: 1.25rem;
-        text-align: left;
-        width: 20rem;
-        margin-left: 30px;
-    }
-    .posts-page .first-post, .second-post, .third-post {
-        width: 22rem;
-        height: 13rem;
-    }
-    .posts-page p {
-        font-size: 13px;
-        font-weight: bold;
-    }
-    .posts-page h3 {
-        font-size: 15px;
-    }
-    .posts-page img {
-        height: 100px;
-    }
-    footer p {
-        background-color: red;
-        font-size: 10px;
-        width: 25rem;
-        margin-left: 180px;
-    }
-}
-
-/* Medium screens e.g iPads, Tablets*/
-@media (min-width: 481px) and (max-width: 768px) {
-    body {
-        background-position: center;
-        background-size: cover;
-    }
-    header {
-        padding: 1rem 1rem; /* Adjust padding */
-    }
-    .logo-image {
-        width: 15rem;
-        height: auto;
-    }
-    .logo-image img {
-        width: 4rem;
-        height: auto;
-    }
-    .logo-image p {
         font-size: 1.5rem;
-    }
-    .top-menu ul {
-        margin-right: 2rem;
-        padding: 2rem 2rem;
-    }
-    .top-menu li {
-        margin: 2rem 3rem;
-        font-size: small;
-    }
-    .top-menu a {
-        font-size: large;    
-    }
-    .top-search-bar {
-        /* width: 0.03rem;
-        height: auto;
-        margin-right: 50px; */
-        display: none;
-    }
-    .blog-front h2 {
-        font-size: 2rem;
-        margin-left: 10rem;
+        margin-left: 2rem;
         margin-top: 1px;
     }
     .blog-text h2 {
@@ -455,27 +534,23 @@ footer p {
     }
     .blog-text .front-end, .back-end {
         font-size: 0.7rem;
-        width: 19rem;
+        width: 20rem;
         height: auto;
-        margin-left: 14rem;
+        margin-left: 0;
     }
-    
     .blog-text ol {
         text-align: left;
     }
     .blog-text h3 {
-        margin-right: 6.5rem;
+        margin-left: 2rem;
         font-size: small;
     }
     .create-post button {
         display: none;
-        /* width: 4rem;
-        height: 1rem;
-        font-size: 10px;
-        align-items: center; */
     }
     .posts-page {
-        margin-left: 15rem;
+        margin-left: 0;
+        width: 100%;
     }
     .posts-page h2 {
         font-size: 1.25rem;
@@ -484,7 +559,7 @@ footer p {
         margin-left: 30px;
     }
     .posts-page .first-post, .second-post, .third-post {
-        width: 40rem;
+        width: 80%;
         height: 18rem;
     }
     .posts-page p {
@@ -492,16 +567,25 @@ footer p {
         font-weight: bold;
     }
     .posts-page h3 {
-        font-size: 15px;
+        font-size: 18px;
     }
     .posts-page img {
-        height: 100px;
+        width: 85%;
+        height: 150px;
+    }
+    .posts-page a {
+        margin-left: 80px;
+    }
+    footer {
+        height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        width: 90%;
     }
     footer p {
-        background-color: red;
-        font-size: 10px;
-        width: 25rem;
-        margin-left: 180px;
+        font-size: 0.6rem;
+        margin: 10px;
     }
 }
 
@@ -511,97 +595,107 @@ footer p {
     body {
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 1020px;
     }
     header {
-        padding: 1rem 1rem; /* Adjust padding */
+        width: 80%;
+        padding: 0.2rem 0.2rem; /* Adjust padding */
     }
     .logo-image {
-        width: 20rem;
+        width: 2.5rem;
         height: auto;
     }
     .logo-image img {
-        width: 30rem;
+        width: 5rem;
         height: auto;
     }
     .logo-image p {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     .top-menu ul {
-        margin-right: 2rem;
-        padding: 2rem 2rem;
+        margin-right: 1rem;
+        padding: 1rem 0.3rem;
+        margin-left: 5rem;
     }
     .top-menu li {
-        margin: 2rem 3rem;
-        font-size: small;
+        margin-left: 5rem;
+        margin-right: 1rem;
+        font-size: medium;
     }
     .top-menu a {
-        font-size: x-large;    
+        font-size: medium;    
     }
     .top-search-bar {
-        /* width: 0.03rem;
-        height: auto;
-        margin-right: 50px; */
-        display: none;
+       display: none;
+    }
+    .blog-front {
+        width: 100%;
     }
     .blog-front h2 {
-        font-size: 3rem;
-        margin-left: 10rem;
+        font-size: 1.5rem;
+        margin-left: 2rem;
         margin-top: 1px;
     }
     .blog-text h2 {
         margin-left: 0.5rem;
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .blog-text .front-end, .back-end {
-        font-size: 1.5rem;
-        width: 30rem;
+        font-size: 0.7rem;
+        width: 25rem;
         height: auto;
-        margin-left: 5rem;
+        margin-left: 0;
     }
-    
     .blog-text ol {
         text-align: left;
     }
     .blog-text h3 {
-        margin-right: 6.5rem;
-        font-size: x-large;
+        margin-left: 2rem;
+        font-size: small;
     }
     .create-post button {
         display: none;
-        /* width: 4rem;
-        height: 1rem;
-        font-size: 10px;
-        align-items: center; */
     }
     .posts-page {
-        margin-left: 15rem;
+        margin-left: 0;
+        width: 100%;
     }
     .posts-page h2 {
-        font-size: 2rem;
+        font-size: 1.25rem;
         text-align: left;
-        width: 40rem;
-        margin-left: 20px;
+        width: 20rem;
+        margin-left: 30px;
     }
     .posts-page .first-post, .second-post, .third-post {
-        width: 60rem;
-        height: 25rem;
+        width: 80%;
+        height: 18rem;
     }
     .posts-page p {
-        font-size: 25px;
+        font-size: 13px;
         font-weight: bold;
     }
     .posts-page h3 {
-        font-size: 25px;
+        font-size: 18px;
     }
     .posts-page img {
-        height: 180px;
+        width: 85%;
+        height: 150px;
+    }
+    .posts-page a {
+        margin-left: 80px;
+    }
+    footer {
+        height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        width: 90%;
     }
     footer p {
-        background-color: red;
-        font-size: 10px;
-        width: 60rem;
-        margin-left: 180px;
-    }   
+        font-size: 0.8rem;
+        margin: 10px;
+    }  
 }
 
 /* Slightly larger screens e.g Desktops, large screens */
@@ -609,291 +703,327 @@ footer p {
     body {
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 1200px;
     }
     header {
+        width: 80%;
         padding: 1rem 1rem; /* Adjust padding */
     }
     .logo-image {
-        width: 20rem;
+        width: 2.5rem;
         height: auto;
     }
     .logo-image img {
-        width: 30rem;
+        width: 5rem;
         height: auto;
     }
     .logo-image p {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     .top-menu ul {
-        margin-right: 2rem;
-        padding: 2rem 2rem;
+        margin-right: 1rem;
+        padding: 1rem 0.3rem;
+        margin-left: 5rem;
     }
     .top-menu li {
-        margin: 2rem 3rem;
-        font-size: small;
+        margin-left: 5rem;
+        margin-right: 1rem;
+        font-size: large;
     }
     .top-menu a {
-        font-size: x-large;    
+        font-size: large;    
     }
     .top-search-bar {
-        /* width: 0.03rem;
-        height: auto;
-        margin-right: 50px; */
-        display: none;
+       display: none;
+    }
+    .blog-front {
+        width: 100%;
     }
     .blog-front h2 {
-        font-size: 3rem;
-        margin-left: 10rem;
+        font-size: 1.8rem;
+        margin-left: 2rem;
         margin-top: 1px;
     }
     .blog-text h2 {
         margin-left: 0.5rem;
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
     .blog-text .front-end, .back-end {
-        font-size: 1.5rem;
-        width: 30rem;
+        font-size: 0.7rem;
+        width: 25rem;
         height: auto;
-        margin-left: 5rem;
+        margin-left: 0;
     }
-    
     .blog-text ol {
         text-align: left;
     }
     .blog-text h3 {
-        margin-right: 6.5rem;
-        font-size: x-large;
+        margin-left: 2rem;
+        font-size: small;
     }
     .create-post button {
         display: none;
-        /* width: 4rem;
-        height: 1rem;
-        font-size: 10px;
-        align-items: center; */
     }
     .posts-page {
-        margin-left: 15rem;
+        margin-left: 0;
+        width: 100%;
     }
     .posts-page h2 {
         font-size: 2rem;
         text-align: left;
-        width: 40rem;
-        margin-left: 20px;
+        width: 100%;
+        margin-left: 25rem;
     }
     .posts-page .first-post, .second-post, .third-post {
-        width: 60rem;
-        height: 25rem;
+        width: 85%;
+        height: 20rem;
     }
     .posts-page p {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
     }
     .posts-page h3 {
-        font-size: 25px;
+        font-size: 24px;
+        font-weight: bolder;
     }
     .posts-page img {
-        height: 180px;
+        width: 85%;
+        height: 150px;
+        margin: 0 2rem;
+    }
+    .posts-page a {
+        margin-left: 80px;
+    }
+    footer {
+        height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        width: 90%;
     }
     footer p {
-        background-color: red;
-        font-size: 10px;
-        width: 60rem;
-        margin-left: 180px;
+        font-size: 0.8rem;
+        margin: 10px;
     }
 }
 
 /* Extra large screens, larger than 1200px e.g TV*/
-@media (min-width: 1201px) {
+@media (min-width: 1201px) and (max-width: 1440px) {
     body {
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 1200px;
     }
     header {
+        width: 80%;
         padding: 1rem 1rem; /* Adjust padding */
     }
     .logo-image {
-        width: 20rem;
+        width: 2.5rem;
         height: auto;
     }
     .logo-image img {
-        width: 30rem;
+        width: 5rem;
         height: auto;
     }
     .logo-image p {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     .top-menu ul {
-        margin-right: 2rem;
-        padding: 2rem 2rem;
+        margin-right: 1rem;
+        padding: 1rem 0.3rem;
+        margin-left: 5rem;
     }
     .top-menu li {
-        margin: 2rem 3rem;
-        font-size: small;
+        margin-left: 5rem;
+        margin-right: 1rem;
+        font-size: large;
     }
     .top-menu a {
-        font-size: x-large;    
+        font-size: large;    
     }
     .top-search-bar {
-        /* width: 0.03rem;
-        height: auto;
-        margin-right: 50px; */
-        display: none;
+       display: none;
+    }
+    .blog-front {
+        width: 100%;
     }
     .blog-front h2 {
-        font-size: 3rem;
-        margin-left: 10rem;
+        font-size: 1.8rem;
+        margin-left: 2rem;
         margin-top: 1px;
     }
     .blog-text h2 {
         margin-left: 0.5rem;
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
     .blog-text .front-end, .back-end {
-        font-size: 1.5rem;
-        width: 30rem;
+        font-size: 0.7rem;
+        width: 25rem;
         height: auto;
-        margin-left: 5rem;
+        margin-left: 0;
     }
-    
     .blog-text ol {
         text-align: left;
     }
     .blog-text h3 {
-        margin-right: 6.5rem;
-        font-size: x-large;
+        margin-left: 2rem;
+        font-size: small;
     }
     .create-post button {
         display: none;
-        /* width: 4rem;
-        height: 1rem;
-        font-size: 10px;
-        align-items: center; */
     }
     .posts-page {
-        margin-left: 15rem;
+        margin-left: 0;
+        width: 100%;
     }
     .posts-page h2 {
         font-size: 2rem;
         text-align: left;
-        width: 40rem;
-        margin-left: 20px;
+        width: 100%;
+        margin-left: 25rem;
     }
     .posts-page .first-post, .second-post, .third-post {
-        width: 60rem;
-        height: 25rem;
+        width: 85%;
+        height: 20rem;
     }
     .posts-page p {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
     }
     .posts-page h3 {
-        font-size: 25px;
+        font-size: 24px;
+        font-weight: bolder;
     }
     .posts-page img {
-        height: 180px;
+        width: 85%;
+        height: 150px;
+        margin: 0 2rem;
+    }
+    .posts-page a {
+        margin-left: 80px;
+    }
+    footer {
+        height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        width: 90%;
     }
     footer p {
-        background-color: red;
-        font-size: 10px;
-        width: 60rem;
-        margin-left: 180px;
+        font-size: 0.8rem;
+        margin: 10px;
     }
 }
 
 /* Media queries */
-@media (min-width: 1201px) {
+@media (min-width: 1441px) {
     body {
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 1200px;
     }
     header {
+        width: 80%;
         padding: 1rem 1rem; /* Adjust padding */
     }
     .logo-image {
-        width: 20rem;
+        width: 2.5rem;
         height: auto;
     }
     .logo-image img {
-        width: 30rem;
+        width: 5rem;
         height: auto;
     }
     .logo-image p {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     .top-menu ul {
-        margin-right: 2rem;
-        padding: 2rem 2rem;
+        margin-right: 1rem;
+        padding: 1rem 0.3rem;
+        margin-left: 5rem;
     }
     .top-menu li {
-        margin: 2rem 3rem;
-        font-size: small;
+        margin-left: 5rem;
+        margin-right: 1rem;
+        font-size: large;
     }
     .top-menu a {
-        font-size: x-large;    
+        font-size: large;    
     }
     .top-search-bar {
-        /* width: 0.03rem;
-        height: auto;
-        margin-right: 50px; */
-        display: none;
+       display: none;
+    }
+    .blog-front {
+        width: 100%;
     }
     .blog-front h2 {
-        font-size: 3rem;
-        margin-left: 10rem;
+        font-size: 1.8rem;
+        margin-left: 2rem;
         margin-top: 1px;
     }
     .blog-text h2 {
         margin-left: 0.5rem;
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
     .blog-text .front-end, .back-end {
-        font-size: 1.5rem;
-        width: 30rem;
+        font-size: 0.7rem;
+        width: 25rem;
         height: auto;
-        margin-left: 5rem;
+        margin-left: 0;
     }
-    
     .blog-text ol {
         text-align: left;
     }
     .blog-text h3 {
-        margin-right: 6.5rem;
-        font-size: x-large;
+        margin-left: 2rem;
+        font-size: small;
     }
     .create-post button {
         display: none;
-        /* width: 4rem;
-        height: 1rem;
-        font-size: 10px;
-        align-items: center; */
     }
     .posts-page {
-        margin-left: 15rem;
+        margin-left: 0;
+        width: 100%;
     }
     .posts-page h2 {
         font-size: 2rem;
         text-align: left;
-        width: 40rem;
-        margin-left: 20px;
+        width: 100%;
+        margin-left: 25rem;
     }
     .posts-page .first-post, .second-post, .third-post {
-        width: 60rem;
-        height: 25rem;
+        width: 85%;
+        height: 20rem;
     }
     .posts-page p {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
     }
     .posts-page h3 {
-        font-size: 25px;
+        font-size: 24px;
+        font-weight: bolder;
     }
     .posts-page img {
-        height: 180px;
+        width: 85%;
+        height: 150px;
+        margin: 0 2rem;
+    }
+    .posts-page a {
+        margin-left: 80px;
+    }
+    footer {
+        height: 1.5rem;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(253, 22, 1, 0.411);
+        width: 90%;
     }
     footer p {
-        background-color: red;
-        font-size: 10px;
-        width: 60rem;
-        margin-left: 180px;
+        font-size: 0.8rem;
+        margin: 10px;
     }
 }
